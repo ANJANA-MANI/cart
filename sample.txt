@@ -1,0 +1,15 @@
+<div className="class" style={{display:show?'block':"none"}}>
+    <h2>Product Details</h2>
+    <div style={{ borderRadius:"5px",
+    boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+    border:"none",width:"300px",height:"400px"}}>
+<img src={product?.images[0]} alt="product" srcset=""  style={{width:"150px",height:"150px",padding:"6px"}}/>
+
+ <h2>{product?.title}</h2>
+ <p>{
+ product?.description.split("").slice(0,45).join("")}...</p>
+ <h3>Discount:{product?.discountPercentage}</h3>
+
+    </div>
+      
+</div>
